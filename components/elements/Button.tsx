@@ -20,7 +20,7 @@ export default function Button({
 
   switch (type) {
     case 'default':
-      style = `${className} border border-amber-400 rounded-sm px-6 py-3`
+      style = `${className} border border-amber-400 rounded-sm px-6 py-3 hover:bg-amber-400 hover:text-black transition duration-250`
   }
 
   return (

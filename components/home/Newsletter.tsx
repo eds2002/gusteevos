@@ -7,7 +7,7 @@ import Button from '../elements/Button'
 
 export default function Newsletter() {
   const [email, setEmail] = useState('')
-  const [modal, setModal] = useState(true)
+  const [modal, setModal] = useState(false)
   const handleSubmit = (e: any) => {
     e.preventDefault()
     if (email === '') return
@@ -76,9 +76,9 @@ function SuccessModal({ setModal }: { setModal: (val: boolean) => void }) {
             Great, thanks
           </Button>
         </div>
-        <div className="absolute -inset-10 opacity-[0.025]">
+        <div className="absolute inset-0 opacity-[0.025]">
           <Image
-            src="/ingredientsVector.svg"
+            src="/bgsvg.svg"
             alt="Image of ingredients"
             fill
             className="object-cover"
